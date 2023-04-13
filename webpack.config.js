@@ -69,5 +69,10 @@ module.exports = {
         favicon: '4geeks.ico',
         template: 'template.html'
     }),
-  ]
+    
+  ],
+  watchOptions: {
+    poll: true,
+    ignored: /node_modules/
+  }
 };
