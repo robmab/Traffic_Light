@@ -38,7 +38,7 @@ export const TrafficSign = () => {
           className={`ligth green ${color === "green" ? "selected" : ""}`}
         ></div>
 
-        {purple === true ? (
+        {purple ? (
           <div
             onClick={() => {
               setColor("purple");
