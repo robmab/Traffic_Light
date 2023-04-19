@@ -1,53 +1,76 @@
 /* *{
     border: 1px red solid;
 } */
-
-.wrapper{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.container * {
+  font-size: 1px;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* TOP */
 
-#trafficTop{
-    margin-top: 10px;
-    width: 15px;
-    height: 100px;
-    
-    background-color: black;
+#trafficTop {
+  margin-top: 10px;
+  width: 15px;
+  height: 100px;
+
+  background-color: black;
 }
 
 /* TRAFFIC_SIGN */
 
 #container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
 
-    width: 100px;
-    border-radius: 10px;
-    padding: 10px 0;
-    
-    background-color: black;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px 0;
+
+  background-color: black;
 }
 
-.ligth{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.ligth {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 .red {
-    background-color: #97040C;
+  background-color: #97040c;
+  cursor: pointer;
 }
 .yellow {
-    background-color:#CA651A;
+  background-color: #ca651a;
+  cursor: pointer;
 }
 .green {
-    background-color: #149739;
+  background-color: #149739;
+  cursor: pointer;
+}
+.purple {
+  background-color: #831095;
+  cursor: pointer;
 }
 
-.selected{
-    box-shadow: 0 0 20px 20px rgb(250, 255, 205)
+.selected {
+  box-shadow: 0 0 20px 20px rgb(250, 255, 205);
+}
+
+/* BUTTONS */
+
+.buttons {
+  margin-top: 20px;
+  background-color: black;
+  border: 1px yellow solid;
+  border-radius: 10px;
+}
+
+.buttons button {
+  margin: 10px;
 }

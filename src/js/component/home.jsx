@@ -4,9 +4,7 @@ import { TrafficSign } from "./traffic-sign.jsx";
 
 //create your first component
 const Home = () => {
-  return (
-	<TrafficSign/>
-  );
+  return <TrafficSign />;
 };
 
 export default Home;
