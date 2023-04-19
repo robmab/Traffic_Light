@@ -6,6 +6,13 @@ export const TrafficSign = () => {
 
   const [purple, setPurple] = useState(false);
 
+  const changeSign = () => {
+    if (color === "red") setColor("yellow");
+    else if (color === "yellow") setColor("green");
+    else if (color === "green") setColor("purple");
+    else setColor("red");
+  };
+
   return (
     <div className="wrapper">
       <div id="trafficTop"></div>
@@ -43,12 +50,7 @@ export const TrafficSign = () => {
 
       <div className="buttons">
         <button
-          onClick={() => {
-            if (color === "red") setColor("yellow");
-            else if (color === "yellow") setColor("green");
-            else if (color === "green") setColor("purple");
-            else setColor("red");
-          }}
+          onClick={changeSign}
           type="button"
           class="btn btn-outline-warning"
         >
