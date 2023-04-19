@@ -9,8 +9,10 @@ export const TrafficSign = () => {
   const changeSign = () => {
     if (color === "red") setColor("yellow");
     else if (color === "yellow") setColor("green");
-    else if (color === "green") setColor("purple");
-    else setColor("red");
+    else if (color === "green") {
+      if (purple) setColor("purple");
+      else setColor("red");
+    } else setColor("red");
   };
 
   return (
